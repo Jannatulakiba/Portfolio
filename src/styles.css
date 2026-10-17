@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+	scroll-behavior: smooth;
+	scroll-padding-top: 6rem;
+}
+
+body {
+	margin: 0;
+	background: #f4f6f2;
+	color: #18211d;
+	font-family: "DM Sans", sans-serif;
+	line-height: 1.6;
+	-webkit-font-smoothing: antialiased;
+}
+
+::selection {
+	background: #c8f169;
+	color: #18211d;
+}
+
+.paper-grid {
+	background-image: linear-gradient(to right, rgb(36 75 57 / 4%) 1px, transparent 1px),
+		linear-gradient(to bottom, rgb(36 75 57 / 4%) 1px, transparent 1px);
+	background-size: 28px 28px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	*,
+	*::before,
+	*::after {
+		scroll-behavior: auto !important;
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+	}
+}
